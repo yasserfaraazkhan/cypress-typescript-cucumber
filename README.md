@@ -3,10 +3,6 @@
 - [cypress](https://www.cypress.io/) - A JavaScript-based end-to-end testing framework.
 - [cypress-cucumber-preprocessor](https://github.com/TheBrainFamily/cypress-cucumber-example) - Library used to support Behavior-Driven Development (BDD) using Cucumber.
 
-## Running Tests
-
-You can run the tests by opening Cypress using the below command line. 
-
 # Requirements
 Test Data can be handled in 2 ways in this
 1. Need to create a fixture file 
@@ -26,7 +22,9 @@ Test Data can be handled in 2 ways in this
     "requestUrl": "https://d3aweb.gridsingularity.com/graphql/"
 }
 ```
-Then simple run with these options
+## Running Tests
+
+You can run the tests by opening Cypress using the below command line. 
 
 ```
 npm run open

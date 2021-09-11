@@ -1,0 +1,6 @@
+{
+  "baseUrl": "https://www.d3a.io/",
+  "testFiles": "**/*.{feature,features}",
+  "defaultCommandTimeout": 8000,
+  "video": false
+}

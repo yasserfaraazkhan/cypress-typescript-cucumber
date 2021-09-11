@@ -130,3 +130,6 @@ docker-compose up electron
 
 docker-compose up electron chrome
 ```
+## Reports
+![Alt text](./resources/reportSnap.png?raw=true "Cucumber reports")
+![Optional Text](./resources/reportSnap.png)

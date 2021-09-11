@@ -6,8 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 cucumber_report/*
 videosDemo
-cypress/fixtures/userCredentials.json
-cypress.env.json
+<!-- cypress/fixtures/userCredentials.json -->
+<!-- cypress.env.json -->
 # Runtime data
 pids
 *.pid

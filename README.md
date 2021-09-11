@@ -52,14 +52,16 @@ Put your feature files in `cypress/integration/`
 Example: cypress/integration/Google.feature
 
 ```gherkin
+@feature-tag
 Feature: Login Page
 
   I want to open a d3a Login page
   
   @login
-  Scenario: Opening a search engine page
-    Given I am on login page
-    Then I should see the empty login form
+  Scenario: User should be able to successfully login
+    Given I am on the d3a's login page
+    When I login with valid credentials
+    Then I should be able to access my projects page 
 ```
 
 ### Bundled features files

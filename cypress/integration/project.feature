@@ -25,6 +25,7 @@ Background:
   Scenario: User should be able create model in a default simulation
     When I create a new project with name "My Project"
     And I add create a default simulation under "My Project"
-    And I create a model with below configuration
+    Then I should successfully create a model with below configuration
     | Main_node  | Main_marker  | node_name |
     | Market     | Market maker | PV        |
+    And I should be able to delete "My Project"

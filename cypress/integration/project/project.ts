@@ -36,7 +36,7 @@ And(
   }
 );
 
-And("I create a model with below configuration", (dataTable) => {
+Then("I should successfully create a model with below configuration", (dataTable) => {
   projectListPage.createModel(dataTable);
 });
 

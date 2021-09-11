@@ -16,3 +16,9 @@ jobs:
           CI: true
       - name: test
         run: npm run test
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v2
+        with:
+          name: report
+          path: cucumber_report/html/cucumber_report.html
+

@@ -1,3 +1,52 @@
+## Libraries
+
+- [cypress](https://www.cypress.io/) - A JavaScript-based end-to-end testing framework.
+- [cypress-cucumber-preprocessor](https://github.com/TheBrainFamily/cypress-cucumber-example) - Library used to support Behavior-Driven Development (BDD) using Cucumber.
+
+## Running Tests
+
+You can run the tests by opening Cypress using the below command line. 
+
+# Requirements
+Test Data can be handled in 2 ways in this
+1. Need to create a fixture file 
+```
+//cypress/fixtures/userCredentials.json
+{
+    "username": "<secret>",
+    "password": "<secret>"
+}
+```
+2. Need to create cypress env json to be user for API calls
+```
+//cypress.env.json
+{
+    "username": "<secret>",
+    "password": "<secret>",
+    "requestUrl": "https://d3aweb.gridsingularity.com/graphql/"
+}
+```
+Then simple run with these options
+
+```
+npm run open
+```
+
+You can also execute all tests through the terminal with the command line below.
+```
+npm run test
+```
+
+You can also specify which tags you want to execute by passing as an argument following the syntax `not @tag1 and (@tag2 or @tag3)` like the command line below:
+```
+npm run test --e TAGS='@login'
+```
+
+You can also change the `baseURL` by setting the `CYPRESS_BASE_URL` environment variable like the command line below:
+```
+CYPRESS_BASE_URL=http://example.com npm run cy:run
+```
+
 ### Single feature files
 
 Put your feature files in `cypress/integration/`

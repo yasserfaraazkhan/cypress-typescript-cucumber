@@ -109,3 +109,24 @@ Given('I am on login page', () => {
 ```
 
 This is a good place to put *before/beforeEach/after/afterEach* hooks related to **that particular feature**. This is incredibly hard to get right with pure cucumber.  
+
+## Running Tests using Docker
+
+A Docker Compose file was created for this project to allow an execution of all tests in each of the following browsers:
+- Electron
+- Chrome
+- Firefox
+
+You can execute the tests using docker with the command below. 
+```
+docker-compose up
+```
+
+You also have the ability to run only in a specific browser passing the browser as an argument like the command below:
+```
+docker-compose up chrome
+docker-compose up firefox
+docker-compose up electron
+
+docker-compose up electron chrome
+```
